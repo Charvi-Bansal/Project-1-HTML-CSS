@@ -89,8 +89,23 @@ body{
 .food__menu__card__description{
     padding: 20px;
 }
-
-
+/*Flex */
+.restaurants__flex__row__one,.restaurants__flex__row__two{
+    width: 100%;
+    display: flex;
+    gap: 4px;
+}
+.restaurant__1__image,.restaurant__2__image,.restaurant__3__image,.restaurant__4__image{
+    width: 100%;
+}
+.restaurant__1, .restaurant__3{
+    width: 100px;
+    height: 150px;    
+}
+.restaurant__2, .restaurant__4{
+    height: 200px;
+    width: 150px;
+}
 
 @media(min-width:768px) {
     .navbar{
