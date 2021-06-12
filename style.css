@@ -22,6 +22,7 @@ body{
         padding:12px;
         border: none;
         border-radius: 6px;
+        cursor: pointer;
 
 }
 
@@ -41,6 +42,12 @@ body{
 .hero__image{
     width: 100%;
 }
+.hero__text{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0;
+
+}
 
 .navbar{
     display:flex;
@@ -55,6 +62,12 @@ body{
     width: 100%;
 }
 
+.food__menu__card{
+    width: 100%;
+}
+.food__image{
+    width: 100%;
+}
 
 @media(min-width:768px) {
     .navbar{
@@ -81,12 +94,15 @@ body{
     .container{
         max-width: 1010px;
     }
-    .hero__image__container{
-        width:500px;
-        height: 500px;
+    .hero__text{
+        font-size: 50px;
+
     }
 
 }
 @media(min-width:1400px) {
+    .container{
+        max-width: 1250px;  
+    }
 
 }
