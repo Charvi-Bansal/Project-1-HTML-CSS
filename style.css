@@ -29,7 +29,7 @@ body{
 .container{
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .hero__container    {
@@ -37,11 +37,25 @@ body{
 
 }
 .hero__image__container{
+    position: relative;
     width: 100%;
 }
+
+.hero__image__shape {
+    position: absolute;
+    right: 2;
+  }
+
 .hero__image{
+    position: absolute;
     width: 100%;
+    right: auto;
+    left: auto;
+    z-index: 2;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
+
 .hero__text{
     font-size: 30px;
     color: #1d3557;
@@ -52,6 +66,7 @@ body{
     display:flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #fff;
 
 }
 .navbar__brand{
@@ -60,6 +75,25 @@ body{
 .navbar__logo{
     width: 100%;
 }
+
+.nav__item {
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.nav__item :hover{
+    border: 2px solid blue;
+}
+
 /* menu styles */
 
 .explore__menu__view__Lists{
@@ -75,7 +109,8 @@ body{
 .explore__menu__text{
     font-size: 30px;
     color: #1d3557;
-    margin: 20px 0;
+    margin-top: 50px;
+    margin-bottom: 25px;
     text-align: center;
 
 }
@@ -84,26 +119,42 @@ body{
     justify-content: center;
 }
 .food__menu__card{
-    width: 100%;
+    /* width: 100%; */
     background-color: #fff;
     border-radius: 8px;
     margin-bottom: 15px;
 }
+
+.food__card__image__container {
+    width: 100%;
+}
+
 .food__image{
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
 .food__menu__card__description{
-    padding: 20px;
+    padding: 15px;
 }
 
 /*Flex */
-.restaurants_description{
-    font-size: 30px;
+.restaurants__text{
+    font-size: 50px;
     color: #1d3557;
-    margin: 20px 0;
-    text-align: center;
+    /* margin: 20px 0; */
+    margin-top: 50px;
+    margin-bottom: 25px;
+    /* text-align: center; */
 }
+
+.restaurants__grid{
+    width: 100%;
+}
+
+.restaurants__container{
+    width: 100%;
+}
+
 .restaurants__flex__row__one,.restaurants__flex__row__two{
     width: 100%;
     display: flex;
@@ -120,17 +171,127 @@ body{
 }
 .restaurant__1, .restaurant__4{
     width: 100%;
-    height: 150px;    
+    height: 120px;    
 }
 .restaurant__2, .restaurant__3{
     height: 200px;
-    width: 120%;
+    width: 160%;
 }
+
+.email__subscribe__container{
+    margin-top: 3rem;
+  width: 100%;
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.email__subscribe__input__field{
+    display: flex;
+  align-items: center;
+}
+
+.email__input{
+    border: 1px solid #ee89a0;
+    background-color: #fcedf0;
+    color: #1d3557;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 4px;
+    gap: 5px;
+}
+
+.email__input::placeholder {
+    color: #bdbcbc;
+  }
+
+.email__input__field{
+    margin-right: 10px;
+}
+
+.email__section{
+    align-items: center;
+}
+
+.text-xl {
+    justify-content: center;
+    color:#1d3557;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.quote__container {
+    position: relative;
+    margin-top: 4rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+      center center / cover no-repeat;
+  }
+  .quote__image__overlay {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 49%;
+  }
+  .quote__image__text {
+    color: #fff;
+    z-index: 3;
+    margin: 0 1rem;
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem 1rem 0;
+    background-image: linear-gradient( 
+        to right,
+         #ff512f 0%,
+         #dd2476 51%,
+         #ff512f 100% 
+         );
+  }
+
+.footer__image__div{
+    width: 300px;
+    filter: brightness(0) invert(1);
+}
+
+
+.footer__image{
+    margin-left: 30px;
+}
+
+.footer__details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-top: 1rem;
+}
+
+.footer__list__item{
+    list-style: none;
+    color: #FFFFFF;
+}
+
 
 @media(min-width:768px) {
     .navbar{
         justify-content: space-between;
-        padding: 10px 20px;
+        padding: 2px 30px;
     }
     .navbar__brand{
         width: 150px;
@@ -140,15 +301,24 @@ body{
         font-size: 20px;
     }
     .hero__container{
+        margin-top: 20px;
+        margin-bottom: 40px;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        justify-content: space-between;
-        gap: 10px;
+        /* justify-content: space-between; */
+        /* gap: 10px; */
     }
     .explore__menu__container{
+        margin-top: 30px;
         position: relative;
     }
+
+    .explore__menu__view__more{
+        display: flex;
+        justify-content: center;
+    }
+
     .explore__menu_gradient__bg{
         position: absolute;
         left: 0;
@@ -171,12 +341,13 @@ body{
         margin-top: 50px;
         display: flex;
         gap: 8px;
+        padding: 0 30px;
     }
     #pizza__card{
         margin-top: -20px;
         margin-bottom: 30px;
     }
-    .restaurants__description {
+    .restaurants__text {
         font-size: 40px;
         width: 100%;
       }
@@ -184,28 +355,70 @@ body{
         display: flex;
         align-items: center;
       }
-    .restaurants__flex {
-        width: 100%;
-      }
+   
     
+
+      .email__subscribe__container{
+          display: flex;
+          justify-content: center;
+      }
+      .email__section{
+          align-items: center;
+      }
+
+     
+    .footer__details{
+        margin-top: 60px;
+        margin-right: 300px;
+       
+    }
+
+
+    footer {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+   
+    
+
 }
 @media(min-width:1020px) {
     .container{
         max-width: 900px;
     }
+
+    .navbar__brand{
+        width: 150px;
+    }
+
+    .button__primary{
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .hero__description{
+        width: 100%;
+    }
+
     .hero__text{
         font-size: 50px;
 
     }
     .explore__menu_lists{
         gap: 20px;
-        padding: 0 20px;
+        /* padding: 0 20px; */
     }
     .explore__menu__text{
         font-size: 50px;
     }
     .restaurants__container{
         margin-top: 30px;
+      }
+
+      .restaurants__grid{
+          margin-left: 0;
       }
 
 }

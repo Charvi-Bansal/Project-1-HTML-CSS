@@ -29,9 +29,19 @@
     <section class="hero__container">
         <div class="hero__image__container">
             <img class="hero__image" src="assets\hero.jpg" alt="hero image" />
+            <img
+            src="assets\svg\heroShape.svg"
+            alt="hero image shape"
+            class="hero__image__shape"
+          />
+          <img
+            src="assets\svg\herobgpattren.svg"
+            alt="hero image shape"
+            class="hero__image__pattren"
+          />
         </div>
-        <div class="hero__text">
-            <h1>Order food from favourite restaurants near you.</h1><br />
+        <div class="hero__description" >
+            <h1 class="hero__text">Order food from favourite restaurants near you.</h1><br />
             <button class="button__primary">Order Now</button>
         </div>
 
@@ -45,33 +55,39 @@
         <div class="explore__menu_lists">
             <!--burger-->
             <div class="food__menu__card">
-                <img src="assets\burger.jpg" alt="burger" class="food__image"/>
+                <div class="food__card__image__container">
+                    <img src="assets\burger.jpg" alt="burger" class="food__image"/>
+                </div>
                 <div class="food__menu_card__description">
-                    <h3 class="food__title">Burgers</h3>
+                    <h3 class="food__title">Burger </h3>
                     <p class="food__restaurants">Burger King , Mcdonalds, Burger Place
-                        <span style=color:red>+3</span>
+                        <span style="color: red" >+3</span>
                     </p>
                     
                 </div>
             </div>
             <!--pizza-->
             <div class="food__menu__card" id="pizza__card">
-                <img src="assets\pizza.jpg" alt="pizza" class="food__image"/>
+                <div class="food__card__image__container">
+                    <img src="assets\pizza.jpg" alt="pizza" class="food__image"/>
+                </div>
                 <div class="food__menu_card__description">
                     <h3 class="food__title">Pizza</h3>
                     <p class="food__restaurants">Pizza Hut, Dominos Pizza 
-                        <span style=color:red>+3</span>
+                        <span style="color: red">+3</span>
                     </p>
                     
                 </div>
             </div>
             <!--ice cream-->
             <div class="food__menu__card">
-                <img src="assets\iceCream.jpg" alt="ice cream" class="food__image"/>
+                <div class="food__card__image__container">
+                    <img src="assets\iceCream.jpg" alt="ice cream" class="food__image"/>
+                </div>
                 <div class="food__menu_card__description">
-                    <h3 class="food__title">Ice Creams </h3>
+                    <h3 class="food__title">Ice Cream </h3>
                     <p class="food__restaurants">Baskin Robbins, Ibaco
-                        <span style=color:red>+3</span>
+                        <span style="color: red">+3</span>
                     </p>
                     
                 </div>
@@ -84,10 +100,10 @@
 
     <!--Restaurants-->
     <section class="restaurants__container">
-        <h1 class="restaurants__description">Order from 100s of restaurants</h1>
+        <h1 class="restaurants__text">Order from 100s of restaurants</h1>
         <div class="restaurants__grid">
             <div class="restaurants__flex__row__one">
-                <div class="restaurant __1">
+                <div class="restaurant__1">
                     <img src="assets\restaurant1.jpg"  class="restaurant__1__image" alt="restaurant__1" />
 
                 </div>
@@ -95,21 +111,68 @@
                     <img src="assets\restaurant2.jpg"  class="restaurant__2__image" alt="restaurant__2" />
 
                 </div>
-                
+            </div>   
+
             <div class="restaurants__flex__row__two">
                 <div class="restaurant__3">
                     <img src="assets\restaurant3.jpg"  class="restaurant__3__image" alt="restaurant__3" />
 
                 </div>
-                <div class="restaurant__4"></div>
-                <img src="assets\restaurant4.jpg"  class="restaurant__4__image" alt="restaurant__4" />
-
+                <div class="restaurant__4">
+                    <img src="assets\restaurant4.jpg"  class="restaurant__4__image" alt="restaurant__4" />
+                </div>
             </div>  
-            </div>
+            
 
         </div>
     </section>
 
+    <!--Email subscription-->
+    <section class="email__subscribe__container">
+        <div class="email__section">
+            <h1 class="text-xl">Stay Updated</h1>
+            <div class="email__subscribe__input__field">
+                <div class="email__input__field">
+                    <input type="email" placeholder="name@email.com" class="email__input">
+                </div>
+                <button class="button__primary">Get Updates</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Quote at bottom-->
+    <section class="quote__container">
+        <div class="quote__image__overlay"></div>
+        <h3 class="quote__image__text">
+          When a man's stomach is full it makes no difference whether he is rich
+          or poor.
+        </h3>
+    </section>
+
+
     </main>
+
+    <!--Footer-->
+    <footer class="change__footer__height">
+        <div class="footer__container">
+            <div class="footer__details footer__list">
+                <ul>
+                    <li class="footer__list__item">Pricing</li>
+                    <li class="footer__list__item">Terms and condition</li>
+                    <li class="footer__list__item">Partnership</li>
+                    <li class="footer__list__item">Career</li>
+                    <li class="footer__list__item">Contact</li>
+                  </ul>
+            </div>
+            
+        </div>
+        <div class="footer__image__div">
+            <img src="assets\logo.png" alt="logo" class="footer__image"/>
+
+        </div>
+        
+        
+      </footer>
+
 </body>
 </html>
